@@ -81,3 +81,30 @@ func TestShallowClone(t *testing.T) {
 		fmt.Println("类型断言失败")
 	}
 }
+
+func TestAc(t *testing.T) {
+	//var abc string = "adbasda"
+	//c := abc[2:4]
+	//fmt.Println(c)
+	//d := []byte(c)
+	//d[0]=123
+	//fmt.Println(string(d))
+	//fmt.Println(abc,c)
+	//====================
+	a := []string{"a", "b", "c", "d", "e", "f", "g"}
+	fmt.Println(a, len(a), cap(a))
+	c := a[1:3]
+	fmt.Println(c, len(c), cap(c))
+	c = append(c, "a")
+	c = append(c, "a")
+	c = append(c, "a")
+	c = append(c, "a")
+	c = append(c, "a")
+	c = append(c, "a")
+	c = append(c, "a")
+	c = append(c, "a")
+	c = append(c, "a")
+	c[1] = "12312313"
+	fmt.Println(c, a, cap(c), cap(a))
+
+}
